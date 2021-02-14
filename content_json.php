@@ -8,7 +8,7 @@ $sql = mysqli_query($result, "select title,
     icon
     from jos_weblinks
     where published = '1'
-    order by convert(title using tis620)
+    order by ordering
 ");
 while($rs = mysqli_fetch_assoc($sql)){
     array_push($json, $rs);
